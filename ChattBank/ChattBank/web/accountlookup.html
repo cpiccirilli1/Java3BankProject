@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChattBank - One stop shop for a blank login.</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>ChattBank</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a> <a href="login.html">Login</a>
+        </nav> 
+        <div>
+            <form method="post" action="http://localhost:8080/ChattBank/accountLookupServlet">
+            <table>
+                <tr>
+                    <td>Account #:</td><td><input type="text" name="acct"></td>
+                </tr>
+                <tr>
+                    <td>Customer Id:</td><td><input type="text" name="custid"></td>
+                </tr>
+                <tr>
+                    <td>Acc. Type:</td><td><input type="text" name="accttype"></td>
+                    
+                </tr>
+                <tr>
+                    <td>Balance:</td><td><input type="text" name="balance"></td>
+                </tr>
+                <tr>
+                        <td></td>
+                        <td><input type="submit" name="submitbtn" value="Look Up..." /> 
+                        <input type="reset" value="clear" /></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <footer>
+            <h5>A list of our corporate sponsors:</h5>
+            No one.                
+        </footer>
+    </body>
+</html>
